@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% load static %}
+
+<head>
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://nadpw.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src='//cdn.matomo.cloud/nadpw.matomo.cloud/piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132320721-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-132320721-1');
+</script>
+
+
+<!--CENTERED MODAL    -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!--CENTERED MODAL-->
+
+
+</head>
+
+
+<body>
+
+
+<div class="jumbotron">
+<br>
+    <div class="container" align="center">
+        <h1 style="margin-bottom:1cm;">T h e &nbsp;&nbsp; L a b</h1>
+        <div class="line"></div>
+        <br>
+        <p>This section contains example implementations using various Cloud Providers<br>click an appropriate link below to jump to the section</p>
+
+
+    </div>
+
+    <div align="center">
+    <div class="tlinks">
+                    <a href="#aws"><button class="btn btn-sm btn-primary" type="button">Amazon Web Services</button></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#ms"><button class="btn btn-sm btn-primary" type="button">Microsoft Azure</button></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#google"><button class="btn btn-sm btn-primary" type="button">Google Cloud</button></a>
+    </div>
+
+    </div>
+
+</div>
+
+
+<div align="center">
+    <div  id="aws"><br><br>
+        <div align="left" class="bigb">
+            <h5 class="smallb">AMAZON WEB SERVICES</h5>
+            <br>
+                <div>
+                    <h6 class="minib">Apache Webserver (This website)</h6>
+                        <p>Components: VPC, EC2, S3, Route 53 & Cloudfront<br>Webserver: Apache<br>Framework: Django<br>Language: Python 3</p>
+                            <a href="#"><button class="btn btn-sm btn-warning" type="button" data-toggle="modal" data-target="#Modal001" >Architectural Diagram</button></a>
+                                <a href="{%url 'home' %}" target="_blank"><button class="btn btn-sm btn-warning" type="button">Launch</button></a>
+                </div>
+
+        </div>
+    </div>
+
+    <div  id="ms"><br><br>
+        <div class="bigb">
+            <h5 class="smallb">MICROSOFT AZURE</h5>
+        </div>
+    </div>
+
+    <div  id="google"><br><br>
+        <div class="bigb">
+            <h5 class="smallb">GOOGLE CLOUD</h5>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!-- Contact Modal Start -->
+
+<div class="modal fade" id="Modal001">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">www.nad.pw</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <img src="{%static 'images/nadpw-diagram.png' %}" type="image/png" width="100%">
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<!-- Contact Modal End -->
+
+
+
+
+<br><br><br><br><br><br>
+
+
+
+
+
+
+</body>
+
+
+
+
+{% endblock %}

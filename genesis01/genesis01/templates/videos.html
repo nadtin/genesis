@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% load static %}
+<head>
+
+    <!-- Matomo -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://nadpw.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src='//cdn.matomo.cloud/nadpw.matomo.cloud/piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132320721-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-132320721-1');
+</script>
+
+
+
+
+<style>
+
+</style>
+
+</head>
+
+
+<br><br>
+
+<div class="jumbotron">
+    <h1>Amazon Web Services</h1>
+    <h3>Installation & Configuration videos</h3>
+    <p><b>Note:</b> Microsoft browsers currently do not play content from AWS S3 buckets consider using Chrome or Firefox, <a href="https://stackoverflow.com/questions/31142287/cant-stream-mp4-using-html5-from-aws-s3-in-ie-even-when-content-type-is-set" target="_blank">Click here </a> for more info</p>
+        <hr class="new1">
+
+
+  <div class="container row justify-content-start">
+                <div class="row">
+
+                        <div class="col-lg-6">
+                          <video width="500" controls>
+                            <source src="https://d3byuilk1yh4fq.cloudfront.net/0001-lambda-s3-demo.mp4" type="video/mp4">
+                                                Your browser does not support HTML5 video.
+                          </video>
+                        </div>
+
+                        <div class="col-lg-5">
+                            <h5><strong>Serverless Computing with Lambda</strong></h5>
+                             <p>This video demonstrates how Lambda can be used to create a microservice and interact with S3 storage for file management</p>
+                        </div>
+                </div>
+            </div>
+</div>
+
+
+
+{% endblock %}

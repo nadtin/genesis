@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% load static %}
+
+<head>
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://nadpw.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src='//cdn.matomo.cloud/nadpw.matomo.cloud/piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+<!--SCROLL SCRIPT SPECIFIC TO home.html - Do not move-->
+<link rel="stylesheet" href="{%static 'scroll.css' %}">
+    <script src="{%static 'scroll.js' %}"></script>
+
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132320721-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-132320721-1');
+</script>
+
+<link href='https://fonts.googleapis.com/css?family=Convergence' rel='stylesheet'>
+
+</head>
+
+<body>
+
+<div class="parallax"></div>
+
+<div class="bg-text">
+  <h2>Hey, I'm</h2>
+  <h1 style="font-size:50px">Nadeem</h1>
+</div>
+
+<div class="bg-scroll">
+<section id="section05" class="demo">
+   <a href="#start"><span></span>Scroll</a>
+</section>
+</div>
+
+
+
+
+<br>
+
+
+<div id="start">
+        <br><br><br>
+    <p style="font-size:5vw;" align="center"><strong>C A R E E R&nbsp;&nbsp;&nbsp;G L A N C E</strong></p>
+        <div class="line"></div>
+        <br><br>
+            <div class="container">
+                <p class="font-weight-bold"><font size="3">&nbsp;&nbsp;&nbsp;&nbsp;I'm a cross breed of an Engineer & a Salesman, besides the sales commissions I have received voluminous personal gratification as appreciation from customers for the amount of technical presales work I have put into every role I have assumed, from sharing technical knowledge to answering technical queries, all in all ensuring the customer is fully comfortable making the choice of putting his capital into my technology portfolio.</font></p>
+            </div>
+        <br>
+
+    <!---------------------------------GLANCE --------------------------------------->
+
+<br>
+<br>
+<div class="container">
+    <img src="/static/images/microsoft_oracle_dubai_uae_cloud_technical_consultant_certified_aws_solutions_architect_mcse_ccna_cv_resume_engineer_it_networking_servers_storage_database_computer_science.jpg" width="100%" align="float-center" alt="Syed Nadeem Ahmed, Career Profile, Resume, CV, Technical Experience" title="Career Glance">
+
+</div>
+
+
+    <!---------------------------------GLANCE --------------------------------------->
+
+</div>
+
+</body>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,143 @@
+{% load static %}
+
+
+body {
+	background: #fffff0; /* Fallback for when there is no custom background color defined. */
+}
+
+html {
+  height: 100%;
+  margin: 0;
+}
+
+
+
+ /* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #000000;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+
+.hi {
+color: #000000;
+	font-size: 30px;
+	line-height: 1.5;
+	margin-bottom: 15px;
+	font-weight: 600;
+	font-family: arial;
+}
+
+
+
+.nad{
+color: #000000;
+	font-size: 60px;
+	line-height: 1.5;
+	margin-bottom: 15px;
+	font-weight: 500;
+	font-family: times;
+}
+
+.bgimg {
+  background-image: url('images/background.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+#navigation defined below:
+
+}
+.navigation-buttons {
+ bottom:20px;
+ position:fixed;
+ right:20px;
+ z-index:999
+}
+.navigation-buttons span {
+ border-radius:3px;
+ cursor:pointer;
+ display:block;
+ height:30px;
+ margin-top:6px;
+ width:30px
+}
+.navigation-buttons span.prev {
+ background:#222 url(/images/nav-prev.9b7656600ce9922302fa591f0be905b7.png) no-repeat 5px 5px
+}
+.navigation-buttons span.next {
+ background:#222 url(/images/nav-next.dacef369fbedad44046aa690538793ff.png) no-repeat 5px 5px
+}
+.navigation-buttons span:hover {
+ background-color:#383838
+}
+
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.bottomright {
+  position: absolute;
+  bottom: 0;
+  right: 16px;
+}
+
+
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}

@@ -1,0 +1,179 @@
+{% load static %}
+
+
+body, html {
+background-color: #ffffff  ;
+  height: 100%;
+  margin: 0;
+  font-family: 'Convergence','Arial','helvetica','sans-serif';
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+  /* Line */
+
+hr.new1 {
+  border-top: 2px solid red;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+/* PARALLAX START */
+
+
+.parallax {
+  /* The image used */
+  background-image: url('images/background.jpg');
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Position text in the middle of the page/image */
+.bg-scroll {
+
+  position: middle;
+  top: 95%;
+}
+
+
+/* Draws a line */
+.line{
+width: 80%;
+height: 0%;
+left: 10%;
+border-bottom: 2px solid black;
+position: absolute;
+}
+
+
+.line2{
+width: 50%;
+height: 0%;
+border-bottom: 2px solid grey;
+position: absolute;
+
+
+
+
+
+
+/* ----------------------------------------------- START OF CODEPEN CONTAINER CSS ------------------------------------------------ */
+
+
+
+.containercp
+{
+  padding: 0px;
+  border: 2px solid #e6e6e6;
+  text-align: center;
+}
+.left-div
+{
+  display: inline-block;
+  max-width: 400px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  border: 2px solid #e6e6e6;
+  border-radius: 3px;
+
+}
+.right-div
+{
+  display: inline-block;
+  max-width: 400px;
+  text-align: left;
+  padding: 3px;
+  margin: auto;
+  border: 2px solid #e6e6e6;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 600px)
+{
+  .left-div, .right-div
+    {
+       max-width: 100%;
+    }
+}
+
+
+
+
+/* ------------- LAB BUTTONS------------*/
+
+
+.tlinks {
+  text-align: center;
+  background-color: white;
+  width: 50%;
+  border: 2px solid grey;
+  padding: 10px;
+  margin: 20px;
+}
+
+.bigb {
+  width: 90%;
+  height: 300px;
+  padding: 25px;
+  margin: 25px;
+  border: 2px solid grey;
+  border-radius: 4px;
+}
+
+
+
+.smallb {
+  text-align: left;
+  border-left: 6px solid red;
+  background-color: lightgrey;
+  width: 100%;
+  padding: 10px;
+}
+
+
+.minib {
+  text-align: left;
+  border-left: 6px solid green;
+  background-color: lightgrey;
+  width: 100%;
+  padding: 6px;
+}
+
+
+/* ------------- LAB BUTTONS------------*/
